@@ -1,0 +1,86 @@
+.conversationBox {
+    padding: 60px;
+    background: #f7f8fa;
+    // top: -80px;
+    position: relative;
+    .MuiStep-vertical {
+       
+        .MuiStepContent-root {
+            margin-left: 30px;
+        }
+        .MuiStepLabel-iconContainer {
+            margin-left: 18px;
+            &.Mui-active {
+                margin-left: 0px;
+            }
+        }
+    }
+    .MuiStepConnector-vertical {
+        margin-left: 30px;
+    }
+    
+}
+
+.userNotePost svg {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    // left: -15px;
+}
+
+.postBox {
+    display: flex;
+    padding: 15px 25px;
+    background: white;
+    top: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #7D7D7D80;
+    position: relative;
+    margin-left: 10px;
+    .inputBox {
+        flex: 3;
+
+        input {
+            border: none;
+            height: 30px;
+            padding-right: 10px;
+            width: 92%;
+            border-right: solid 0.5px #babac1;
+        }
+    }
+
+    .buttonBox {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        button {
+            min-width: 85px;
+            background: #d63648;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            &.post-attachment {
+                min-width: 35px !important;
+                width: 35px !important;
+                height: 35px !important;
+                border-radius: 50%;
+                background: #ECECEC;
+                padding: 0px 0px;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    color: #344857;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+}

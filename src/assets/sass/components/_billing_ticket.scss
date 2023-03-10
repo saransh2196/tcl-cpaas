@@ -1,0 +1,85 @@
+.cardType__1.billingTicket:hover {
+    background-color: #fff !important;
+    background-image: url('../../../assets/images/card7active.png');
+    // box-shadow: 1px 14px 41px -10px rgba(61, 184, 135, 30%) !important;
+
+    .cardType__Number {
+        color: #3cb887 !important;
+    }
+
+    .cardType__name {
+        color: #3cb887 !important;
+    }
+
+    &.allTickets {
+        border: 1px solid #1c73e9 !important;
+    }
+
+    &.inprogress {
+        border: 1px solid #7356a5 !important;
+
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: #7356a5 !important;
+        }
+    }
+
+    &.resolve {
+        border: 1px solid #3cb887 !important;
+
+        svg path {
+            width: 40px;
+            height: 40px;
+            fill: #3cb887 !important;
+        }
+    }
+}
+
+.cardType__1.billingTicket {
+    background-image: url('../../../assets/images/card7active.png');
+    // box-shadow: 1px 14px 41px -10px rgb(61 184 135 / 30%) !important;
+
+    &.allTickets {
+        background-color: #1c73e9 !important;
+    }
+
+    &.inprogress {
+        background-color: #7356a5 !important;
+
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: white !important;
+        }
+    }
+
+    &.resolve {
+        background-color: #3cb887 !important;
+
+        svg {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+    }
+}
+
+.table-billingTicket {
+    .WIP {
+        svg {
+            width: 28px;
+            height: 28px;
+            // fill: #7356a5;
+            fill: #344857;
+        }
+    }
+
+    .completed {
+        svg {
+            width: 28px;
+            height: 28px;
+            fill: #3cb887;
+        }
+    }
+}

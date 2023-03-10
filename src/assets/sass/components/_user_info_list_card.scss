@@ -1,0 +1,166 @@
+.user_info_list_card.list_content {
+    // flex-direction: row;
+    column-gap: 20px;
+    padding: 16px;
+    padding-right: 48px;
+    background-color: #fff;
+    border-radius: 16px;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: all 250ms 0ms ease-in;
+    width: fit-content;
+    width: 1670px;
+
+    &:hover {
+        border: 1px solid #3db887;
+        box-shadow: 0px 15px 15px #3db88708;
+    }
+
+    .list_card__item {
+        flex-grow: 1;
+        width: 200px;
+        flex-shrink: 0;
+
+        &:nth-child(1){
+            flex-grow: unset;
+            min-width: 64px;
+            width: unset;
+        }
+
+        &:nth-child(2){
+            // flex-grow: unset;
+        }
+
+        &:last-child{
+            flex-grow: unset;
+            width: 112px;
+        }
+
+        font-family: ubuntu;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500;
+        color: #344857;
+
+        &:nth-child(2), &:nth-child(4), &:nth-child(6){
+            text-transform: capitalize;
+        }
+
+        &:nth-child(5) {
+            text-transform: uppercase;
+        }
+
+        .with_icon {
+            padding: 14px;
+            background-color: #F7F8FA;
+            border-radius: 16px;
+
+            & svg {
+                color: #344857;
+                
+                &[data-testid='CheckCircleOutlineOutlinedIcon']{
+                    color: #3db887;
+                }
+            }
+
+            &.rounded {
+                padding: 10px;
+                border-radius: 100px;
+            }
+        }
+
+        &.with_icons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            margin-left: auto;
+
+            & .with_icon:hover {
+                background-color: $red;
+                
+                & svg {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.user_info_list_card.list_header {
+    // flex-direction: row;
+    column-gap: 20px;
+    padding: 8px 48px 8px 16px;
+    border-radius: 16px;
+    align-items: center;
+    width: 1670px;
+
+    .list_card__item {
+        width: 200px;
+        flex-grow: 1;
+        flex-shrink: 0;
+
+        &:nth-child(1){
+            flex-grow: unset;
+            min-width: 64px;
+            width: unset;
+        }
+
+        &:nth-child(2){
+            // flex-grow: unset;
+        }
+
+        &:last-child{
+            flex-grow: unset;
+            width: 112px;
+            visibility: hidden;
+        }
+
+        font-family: ubuntu;
+        font-size: 12px;
+        line-height: 21px;
+        font-weight: 700;
+        color: #9D9FA1;
+        text-transform: uppercase;
+
+        .with_icon {
+            padding: 14px;
+            background-color: #F7F8FA;
+            border-radius: 16px;
+
+            & svg {
+                color: #9D9FA1;
+                
+                &[data-testid='CheckCircleOutlineOutlinedIcon']{
+                    color: #3db887;
+                }
+            }
+
+            &.rounded {
+                padding: 10px;
+                border-radius: 100px;
+            }
+        }
+
+        &.with_icons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            margin-left: auto;
+
+            & .with_icon:hover {
+                background-color: $red;
+                
+                & svg {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

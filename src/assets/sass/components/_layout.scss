@@ -1,0 +1,398 @@
+.Layout__wrapper {
+    width: 100%;
+    background: #f7f8fa;
+}
+.Layout__navbar {
+    width: 100%;
+    height: 90px;
+    grid-area: dashboardNavbar;
+    background: white;
+    padding: 0px 0px 0px 50px;
+    z-index: 999 !important;
+
+    .Layout__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 48px;
+        row-gap: 16px;
+
+        .logo {
+            width: 106px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right__elements {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 60px;
+
+            .right__elementsItem {
+
+                @media only screen and (max-width:1400px) {
+                    form {
+                        width: 300px;
+                    }
+                }
+            }
+
+            .search__group {
+                .search__form {
+                    background: #f7f8fa;
+                    border: 1px solid #efefef;
+                    border-radius: 100px;
+                    box-shadow: none !important;
+                    padding: 0px 15px;
+                    opacity: 1;
+
+                    .MuiInputBase-root {
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.56px;
+                        color: #344857;
+                        // opacity: 0.7;
+                    }
+
+                    // input {
+                    //     &::placeholder {
+                    //         text-align: left;
+                    //         font-weight: 600;
+                    //         font-size: 14px;
+                    //         line-height: 20px;
+                    //         letter-spacing: -0.56px;
+                    //         color: #344857;
+                    //         opacity: 0.5;
+                    //     }
+                    // }
+                }
+            }
+
+            .profile__setting {
+                button {
+                    background: white;
+                    width: 225px;
+                    // arhan
+                    // width: 300px;
+                    height: 90px;
+                    padding: 0;
+                    margin: 0;
+                    border-radius: 0;
+
+                    .userName {
+                        display: inline-block;
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0px;
+                        color: #11153b;
+                        text-transform: capitalize;
+                        margin: 0px 10px;
+                        opacity: 1;
+                        font-family: ubuntu;
+                    }
+
+                    .dropArrow {
+                        color: #11153b;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Layout__sidebarsidebar {
+    width: 180px;
+    // height: 100vh;
+    background: white;
+    grid-area: dashboardSidebar;
+    padding: 50px 50px;
+    position: relative;
+    z-index: 110 !important;
+
+    .sidebarToggle {
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 60px;
+        background: #ffffff;
+        box-shadow: 0px 5px 15px #00000014 !important;
+        border-radius: 23px;
+        // margin-top: -90px;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+        opacity: 1;
+
+        &:hover {
+            background-color: $red !important;
+
+            &>svg {
+
+                & path {
+                    fill: $white !important;
+                }
+            }
+        }
+    }
+
+    .sidebar__list {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .list__item {
+            position: relative;
+
+            .item__link {
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                flex-wrap: nowrap;
+                text-decoration: none !important;
+                padding: 10px 15px;
+                margin-bottom: 20px;
+
+                &.sidebar-active {
+                    background: #f7f8fa;
+                    border-radius: 12px;
+                    opacity: 1;
+                    // flex-direction: column;
+                    // position: relative;
+                    // margin-bottom: 30px;
+
+                    .link__icon {
+                        svg {
+                            fill: #d63548;
+
+                            rect,
+                            path {
+                                fill: #d63548;
+                                stroke: #d63548;
+                            }
+                        }
+                    }
+
+                    .link__text {
+                        // display: block !important;
+                        color: #d63548;
+                        font-size: 13px;
+                        white-space: nowrap;
+                        // position: absolute;
+                        // margin-left: 0px;
+                        // bottom: -20px;
+                    }
+                }
+
+                .link__icon {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .link__text {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: bold;
+                    font-family: 'ubuntu';
+                    letter-spacing: -0.32px;
+                    color: #52626f;
+                    text-transform: capitalize;
+                    margin-left: 10px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.Layout__content {
+    padding: 40px 60px 80px;
+    min-height: calc(100vh - 90px);
+
+    .content__header {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .content__breadcrum {
+            .breadcrum-stack {
+                margin-bottom: 10px;
+
+                a,
+                p {
+                    text-align: left;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: -0.56px;
+                    color: #344857;
+                    opacity: 1;
+                    font-family: ubuntu;
+
+                    @media (max-width: 1900px) {
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+
+                p {
+                    color: #d63548;
+                }
+            }
+
+            .content_pageTitle {
+                text-align: left;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 37px;
+                letter-spacing: -0.64px;
+                margin: 0px;
+                color: #344857;
+                opacity: 1;
+
+                @media (max-width: 1900px) {
+                    font-size: 27px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .search__form {
+            background: #f1f4f9;
+            border: 1px solid #3448571a;
+            border-radius: 100px;
+            box-shadow: none !important;
+            padding-left: 15px;
+            opacity: 1;
+
+            .MuiInputBase-root {
+                text-align: left;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.56px;
+                color: #344857;
+                // opacity: 0.5;
+            }
+        }
+    }
+}
+
+.Layout__wrapper~header {
+    display: none !important;
+}
+
+
+.Layout__content .MuiTableContainer-root {
+
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #cbd0d4;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #7e8a93;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #52626f;
+    }
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1400px)  {
+    .Layout__navbar {
+        .Layout__container {
+            .right__elements {
+                gap: 35px !important;
+                .right__elementsItem {
+                    form {
+                        width: 200px !important;
+                    }
+                } 
+            } 
+            .profile__setting {
+                button {
+                    width: 160px !important;
+                }
+            } 
+        } 
+    } 
+    .Layout__content {
+        .content__header {
+            .search__form {
+                width: 300px !important;
+            }
+        } 
+    } 
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 1281px)  { 
+    .Layout__navbar {
+        .Layout__container {
+            .right__elements {
+                gap: 35px !important;
+                .right__elementsItem {
+                    form {
+                        width: 200px !important;
+                    }
+                } 
+            } 
+            .profile__setting {
+                button {
+                    width: 160px !important;
+                }
+            } 
+        } 
+    } 
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px)  {
+    .Layout__navbar {
+        .Layout__container {
+            .right__elements {
+                gap: 35px !important;
+                .right__elementsItem {
+                    form {
+                        width: 200px !important;
+                    }
+                } 
+            } 
+            .profile__setting {
+                button {
+                    width: 160px !important;
+                }
+            } 
+        } 
+    } 
+    .Layout__content {
+        .content__header {
+            .search__form {
+                width: 260px !important;
+            }
+        } 
+    } 
+}

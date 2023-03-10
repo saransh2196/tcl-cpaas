@@ -1,0 +1,178 @@
+.actions__container {
+
+    select {
+        background: url('../../images/svg/downarrow.svg') no-repeat 92%;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        padding: 4px 20px;
+    }
+
+    .actions__parent {
+
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 58px;
+        column-gap: 50px;
+
+    
+    }
+}
+
+
+.actions__child {
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+
+    select {
+        background-color: #F1F4F9;
+        border: 1px solid #3448571A;
+        padding: 8px 20px;
+        border-radius: 24px;
+
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.42px;
+        color: #344857;
+        font-family: ubuntu;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        background: url('../../images/svg/downarrow.svg') no-repeat 92%;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        @media only screen and (max-width: 1280px) {
+            background-size: 7px;
+            background-position: 90% center;
+        }
+        &.admin {
+            padding: 15px 20px;
+            min-width: 220px;
+            @media only screen and (max-width: 1900px) {
+                padding: 11px 20px;
+                min-width: 166px;
+                font-size: 12px;
+            }
+            @media only screen and (max-width: 1280px) {
+                min-width: 150px;
+                font-size: 10px;
+                padding: 8px 20px;
+            }
+        }
+    }
+
+    .results {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.42px;
+        color: #555555;
+        font-family: ubuntu;
+        font-weight: 500;
+    }
+
+
+    .csv_download__btn {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        line-height: 1;
+        border-radius: 100px;
+        color: $red;
+        border-color: $red;
+        font-family: ubuntu;
+        font-weight: 700;
+        font-size: 12px;
+        transition: all 150ms 0ms ease-in;
+
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
+
+        &.created_date {
+            background-color: #F1F4F9;
+            border-color: #3448571A;
+            color: #344857;
+            opacity: 0.5;
+            min-width: 220px;
+            justify-content: space-between;
+        }
+    }
+
+    .add_user__btn {
+        min-width: 210px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        line-height: 1;
+        border-radius: 100px;
+        font-family: ubuntu;
+        font-weight: 700;
+        font-size: 12px;
+        color: $white;
+        background-color: $red !important;
+        border-color: $red !important;
+        transition: all 150ms 0ms ease-in;
+        @media only screen and (max-width: 1900px) {
+            min-width: 166px;
+            font-size: 10px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+        @media only screen and (max-width: 1280px) {
+            min-width: 150px;
+            font-size: 9px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        svg {
+            @media only screen and (max-width: 1400px) {
+            width: 18px;
+            }
+        }
+        
+    }
+}
+
+.grid_icons__container {
+    padding: 7px;
+    
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid #3448571A;
+    
+    @media only screen and (max-width: 1900px) {
+        padding: 10px;
+    }
+
+    & .grid_icons__item {
+        padding: 8px 12px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 0px;
+
+        & svg {
+            width: 0.9em;
+            height: 0.9em;
+            @media only screen and (max-width: 1900px) {
+                width: 17px;
+                height: 17px;
+            }
+            @media only screen and (max-width: 1400px) {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+
+    
+}

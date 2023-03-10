@@ -1,0 +1,18 @@
+.radio_group {
+
+    & span + span {
+        font-family: ubuntu;
+        font-weight: 500;
+        color: #ABB4BB;
+    }
+
+    & span.Mui-checked + span
+    {
+
+        &.MuiTypography-body1 {
+            font-family: ubuntu;
+            font-weight: 500;
+            color: #131523;
+        }
+    }
+}

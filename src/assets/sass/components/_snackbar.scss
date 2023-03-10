@@ -1,0 +1,192 @@
+.MuiSnackbarContent-root {
+    background-color: #fff !important;
+    color: #11153B !important;
+    border-radius: 10px !important;
+    border: 1px solid #38AA7C !important;
+    padding: 0;
+
+    & .MuiSnackbarContent-message {
+        max-width: 550px;
+        padding: 40px;
+
+        @media only screen and (max-width:1400px) {
+            padding: 24px;
+        }
+    }
+
+    & .MuiSnackbarContent-action {
+        position: absolute;
+        top: 2px;
+        right: 12px;
+    }
+}
+
+
+// Change border colors for different CDR progress states
+.cdr-error .MuiSnackbarContent-root {
+    border-color: $red;
+}
+
+
+
+
+
+// CDR Error styles
+.cdr-error {
+    .snackbar-content--container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        & svg {
+            color: $red;
+        }
+
+        .snackbar-content {
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+
+            & p {
+                &:first-child {
+                    font-family: 'Ubuntu';
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin: 0;
+                }
+
+                &:last-child {
+                    font-family: 'Ubuntu';
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin: 0;
+                    color: #A1A1A1;
+                }
+            }
+
+        }
+    }
+}
+
+// CDR Preparing styles
+.cdr-preparing {
+    .snackbar-content--container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        & svg {
+            color: #38AA7C;
+        }
+
+        .snackbar-content {
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+
+            & p {
+                &:first-child {
+                    font-family: 'Ubuntu';
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin: 0;
+                }
+
+                &:last-child {
+                    font-family: 'Ubuntu';
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin: 0;
+                    color: #A1A1A1;
+                }
+            }
+
+        }
+    }
+}
+
+// CDR Downloading styles
+.cdr-downloading {
+    .snackbar-content--container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        & svg {
+            color: #38AA7C;
+        }
+
+        .snackbar-content {
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+
+            & p {
+                &:first-child {
+                    font-family: 'Ubuntu';
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin: 0;
+                }
+
+                &:last-child {
+                    font-family: 'Ubuntu';
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin: 0;
+                    color: #A1A1A1;
+                }
+            }
+
+        }
+    }
+}
+
+// CDR Downloaded styles
+.cdr-downloaded {
+    .snackbar-content--container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        & svg {
+            color: #38AA7C;
+        }
+
+        .snackbar-content {
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+
+            & p {
+                &:first-child {
+                    font-family: 'Ubuntu';
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin: 0;
+                }
+
+                &:last-child {
+                    font-family: 'Ubuntu';
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin: 0;
+                    color: #A1A1A1;
+                }
+            }
+
+        }
+    }
+}

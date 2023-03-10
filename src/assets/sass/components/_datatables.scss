@@ -1,0 +1,290 @@
+ul.actionButtons {
+
+    & button.actionButton__item {
+        &:hover {
+
+            & span {
+
+                transition: all 200ms 0ms ease-in;
+                background-color: $red;
+
+                & svg {
+
+                    & path {
+                        transition: all 200ms 0ms ease-in;
+                        fill: $white;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    & button.download-cdr {
+        &:hover {
+            background-color: #d63548;
+
+            & svg {
+
+                & path {
+                    fill: $white;
+                }
+            }
+        }
+    }
+}
+
+.actionButton__item svg {
+    // top: 12px;
+    position: relative;
+}
+
+.actionButtons .actionButton__item span svg {
+    top: 12px;
+}
+
+.onlySVG {
+
+    &.WIP {
+        svg {
+            path {
+                fill: #7356a5;
+            }
+        }
+    }
+    .overdue svg path {
+        fill: rgb(54, 63, 94);
+        stroke: rgb(54, 63, 94);
+    }
+
+    .overdue svg circle {
+        stroke: rgb(54, 63, 94);
+        fill: rgb(54, 63, 94);
+    }
+
+    .overdue svg,
+    .completed svg,
+    .pending svg {
+        width: 20px;
+        height: 20px;
+    }
+    .pending svg path {
+        fill: rgb(229, 68, 87);
+        stroke: rgb(229, 68, 87);
+    }
+
+    .pending svg circle {
+        stroke: rgb(229, 68, 87);
+        fill: rgb(229, 68, 87);
+    }
+
+    .completed svg path {
+        fill: rgb(61, 184, 135);
+        stroke: rgb(61, 184, 135);
+    }
+
+ 
+
+    .completed svg circle {
+        stroke: rgb(61, 184, 135);
+        fill: rgb(61, 184, 135);
+    }
+
+    .active svg path {
+        // stroke: rgb(61, 184, 135);
+        fill: rgb(61, 184, 135);
+    }
+
+    .active svg circle {
+        stroke: rgb(61, 184, 135);
+        fill: rgb(61, 184, 135);
+    }
+
+    // .inactive svg line {
+    //     stroke: rgb(229, 68, 87);
+    //     fill: rgb(229, 68, 87);
+    // }
+
+    .inactive svg circle {
+        &:nth-child(2){
+            stroke: rgb(229, 68, 87);
+        }
+    }
+
+    .invited svg path {
+        // stroke: rgb(54, 63, 94);
+        fill: rgb(54, 63, 94);
+    }
+
+    .invited svg circle {
+        stroke: rgb(54, 63, 94);
+        fill: rgb(54, 63, 94);
+    }
+
+    
+
+    // .inactive svg {
+    //     width: 18px;
+    //     height: 18px;
+    //     margin-top: -4px;
+    //     @media only screen and (max-width: 1900px) {
+    //         width: 12px;
+    //         height: 12px;
+    //      }
+    // }
+
+    .active svg {
+        font-size: 15px !important;
+        width: auto;
+    }
+}
+
+
+#basic-menu-customerle,
+#basic-menu-entity,
+#basic-menu,
+#basic-menu-invoiceno,
+#basic-menu-pono,
+#basic-menu-status,
+#basic-menu-amt {
+    & ul {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // background-color: $white;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 50px #00000026;
+
+        & li {
+            font-size: 14px;
+            color: #717171;
+
+            & svg {
+                height: 20px;
+            }
+
+        }
+
+        &>li:last-of-type {
+            color: #344857;
+            opacity: 0.4;
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+        }
+    }
+}
+
+
+
+// Specifically for status
+#basic-menu-status {
+    & ul {
+        width: 250px;
+        gap: 8px;
+
+        & li {
+
+
+            &:last-child {
+                display: flex;
+                gap: 16px;
+            }
+        }
+    }
+}
+
+// Specifically for invoice amt
+#basic-menu-status {
+    & ul {
+
+        & li {
+
+
+            &:nth-child(2) {
+                display: flex;
+                gap: 16px;
+            }
+
+        }
+    }
+}
+
+.inside_search {
+    width: 100%;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    background: #F7F8FA;
+    height: 36px;
+    padding: 10px 15px;
+
+    &::placeholder {
+        color: #344857;
+        opacity: 0.5;
+    }
+}
+
+
+.customer-le-menu {
+
+    position: absolute;
+    top: 1px;
+    right: -40px;
+    z-index: 100;
+
+    button#basic-button {
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+.clear-filters {
+    font-family: ubuntu;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: $red;
+    font-size: 12px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+
+.manualTbthead td:first-of-type ul[role='menu'] li svg[data-testid="CheckBoxIcon"] path {
+    fill: $red;
+}
+
+// Style tooltips
+.MuiTooltip-popper[data-popper-placement*="bottom"] .css-ja5taz-MuiTooltip-tooltip {
+    background-color: #fff;
+    color: #092133;
+    font-family: ubuntu;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 1px solid #00000033;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #00000033;
+        border-left: 1px solid #00000033;
+        top: -3px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background: white;
+    }
+}
+
+// Give some spacing beneath action search dropdowns
+[role="presentation"] .MuiMenu-paper {
+    margin-top: 8px;
+}
+
+

@@ -1,0 +1,71 @@
+.radio-button-group {
+    margin-bottom: 20px;
+}
+
+
+.css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root li {
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.profile-details .profile-detail--container {
+    background-color: #f9f9f9;
+
+
+    &.addUser-profile-detail--container {
+        padding-bottom: 30px;
+    }
+
+    // &:hover {
+    //     box-shadow: 0px 15px 15px #00000008;
+    // }
+}
+
+.tableModule {
+    label {
+        background: transparent !important;
+        color: #344857 !important;
+    }
+}
+.raise-ticket {
+    padding: 0px !important;
+    .raise-ticket--inputWrapper {
+    .customScroll {
+        height: calc(100vh - 170px);
+        padding: 100px 60px;
+    }
+    .sidebarCta-fixed {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        z-index: 10;
+        margin-top: 0;
+        padding: 30px 56px;
+        background: white;
+    }
+    }
+}
+
+// .commonInput {
+//     .MuiFormLabel-root {
+//         top: 18px !important;
+//         &[data-shrink='true'] {
+//             top: 10px !important;
+//         }
+//     }
+//     .MuiInputBase-input {
+//         margin-top: 12px !important;
+//     }
+// }
+
+// #select-entity-form {
+//     label {
+//         top: 16px;
+//     }
+//    & [role=button] {
+//     margin-top: 10px;
+//    }
+// } 
+
+

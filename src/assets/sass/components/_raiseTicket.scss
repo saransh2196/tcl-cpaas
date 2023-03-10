@@ -1,0 +1,25 @@
+
+form.raise-ticket-input.MuiBox-root.css-1hpqkki {
+    & > div:nth-child(3), & > div:nth-child(4) {
+        & > div {
+            height: 58px;
+
+            & #demo-simple-select {
+                color: #222;
+            }
+        }
+    }
+}
+
+
+.raise-ticket fieldset {
+    border-color: #B4BCC1 !important;
+    top: -2px;
+    border-radius: 10px;
+}
+
+.raise-ticket {
+    @media only screen and (max-width: 1280px) {
+        padding: 40px 40px !important;
+      }
+}

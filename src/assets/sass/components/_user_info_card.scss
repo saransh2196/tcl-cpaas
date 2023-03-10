@@ -1,0 +1,199 @@
+// Single card styles
+.single-card {
+
+    
+    height: auto;
+    background-color: #ffe0e0;
+    background-color: #fff;
+    border-radius: 16px;
+
+    // display: flex;
+    // flex-direction: column;
+    // gap: 24px;
+
+    padding: 24px;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0px 30px 30px #0000000D;
+    }
+
+    &:hover .icon-right--container {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 25%, white 30%, rgba(255, 255, 255, 1) 100%);
+    }
+
+
+    & .icon-right--container {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        z-index: 1;
+        // padding-left: 32px;
+        // padding-bottom: 8px;
+
+
+        & button.icon-right {
+            padding: 0px;
+            background-color: transparent;
+            transition: all 150ms 0ms ease-in;
+            span {
+                display: flex;
+                align-items: flex-start;
+            }
+            svg {
+                font-size: 20px !important;
+            }
+
+            &.icon-editmode {
+                padding: 10px 10px;
+                display: none !important;
+                background-color: #F7F8FA;
+            }
+
+
+            &:hover {
+                background-color: $red;
+            }
+
+            & svg[data-testid="CheckCircleIcon"] {
+                color: #3db887;
+            }
+
+            & svg[data-testid="RemoveCircleIcon"] {
+                color: #e54457;
+            }
+
+            & svg[data-testid="AccessTimeFilledIcon"] {
+                color: #363F5E;
+            }
+
+            & svg[data-testid="ModeEditOutlinedIcon"] {
+                color: #344857;
+                opacity: 0.5;
+            }
+
+            & svg[data-testid="RemoveCircleOutlineOutlinedIcon"] {
+                color: #344857;
+                opacity: 0.5;
+            }
+
+            &:hover svg {
+                color: #fff;
+                opacity: 1;
+            }
+        }
+
+    }
+
+    & .flex-division {
+        display: flex;
+        &.top-content {
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        &.middle-content,
+        &.bottom-content {
+            // padding-left: 15px;
+            align-items: center;
+            justify-content: flex-start;
+            @media only screen and (max-width: 1440px) {
+                padding-left: 5px;
+            }
+        }
+
+        & button {
+            color: #344857;
+            background-color: #E8E8E8;
+            margin-right: 20px;
+            & svg {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        & .MuiAvatar-circular {
+            width: 60px;
+            height: 60px;
+            margin-right: 24px;
+
+            @media only screen and (max-width: 1440px) {
+                width: 40px;
+                height: 40px;
+            }
+
+            & svg {
+                width: 2em;
+                height: 2em;
+            }
+        }
+
+        & .internal-content {
+            width: 100%;
+            // display: flex;
+            // flex-direction: column;
+            // gap: 4px;
+
+            & a {
+                padding: 0;
+                font-size: 14px;
+                font-family: 'Ubuntu';
+                text-transform: none;
+                line-height: 18px;
+                color: #D63548;
+                justify-content: flex-start;
+                margin: 3px 0px 7px;
+            }
+
+            & h3 {
+                color: #344857;
+                font-family: ubuntu;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                letter-spacing: -0.72px;
+                text-transform: capitalize;
+            }
+
+            & span {
+                color: #787785;
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: -0.72px;
+                text-transform: capitalize;
+                &.italic {
+                    font-size: 12px;
+                }
+            }
+
+            & span.italic {
+                font-style: italic;
+            }
+
+            & h4 {
+                color: #344857;
+                opacity: 0.7;
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.48px;
+                text-transform: capitalize;
+            }
+
+        }
+    }
+
+    &:hover .icon-right--container .icon-right {
+        display: none !important;
+    }
+
+    &:hover .icon-right--container .icon-right.icon-editmode {
+        display: flex !important;
+    }
+}

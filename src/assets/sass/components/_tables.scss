@@ -1,0 +1,392 @@
+// give more space between icon and text
+.profile__menu.right__menu [aria-labelledby="basic-button"]>li {
+    justify-content: flex-start;
+    gap: 6px;
+
+    // change color of checkbox icon
+    [data-testid="CheckBoxIcon"] {
+        color: #D63548;
+    }
+
+    // remove border bottom from li's ::after
+    & .MuiList-root>li::after {
+        content: none;
+    }
+}
+
+#hiding {
+    display: flex;
+    font-family: ubuntu;
+    position: relative;
+}
+
+.tooltip {
+    width: 60%;
+    visibility: hidden;
+    background-color: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.table-cell-tooltip:hover+.tooltip {
+    visibility: visible;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.iconCta {
+
+    a {
+        color: #d63548;
+        text-decoration: none;
+    }
+
+    &:hover a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+.action__elementItem .iconCta:hover span.icon svg path {
+    fill: #fff !important;
+}
+
+
+
+
+
+
+ .right__menu [aria-labelledby="basic-button"] {
+
+
+
+    padding: 22px !important;
+    background-color: #fff;
+
+    &>li {
+        padding: 0 !important;
+        &:hover {
+            background: none !important;
+        }
+
+
+
+        &:nth-child(1) {
+            padding-bottom: 20px !important;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 300px;
+                height: 1px;
+                background-color: rgba(112, 112, 112, 0.1019607843);
+                opacity: 1;
+            }
+        }
+
+        &:nth-child(2) {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            padding-left: 12px !important;
+
+            & span.icon {
+                margin-right: 14px;
+            }
+        }
+
+        &:nth-child(3) {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            padding-left: 12px !important;
+            margin-bottom: 20px !important;
+            @media only screen and (max-width:1400px) {
+                margin-bottom: 0px !important;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 300px;
+                height: 1px;
+                background-color: rgba(112, 112, 112, 0.1019607843);
+                opacity: 1;
+            }
+        }
+
+        &:nth-child(4) {
+            padding-top: 20px !important;
+            padding-bottom: 0px !important;
+            padding-left: 12px !important;
+        }
+
+    }
+}
+
+
+th.MuiTableCell-root {
+
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-right: 0 !important;
+}
+
+
+td.MuiTableCell-root:last-child {
+
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-left: 0 !important;
+
+}
+
+tbody th,
+tbody td {
+    border: none !important;
+}
+
+
+
+// transparent border on table row which changes color on hover
+tbody tr {
+
+    & th,
+    & td {
+        border: 2px solid transparent !important;
+    }
+
+    & th {
+        border-right: 0 !important;
+    }
+
+    & td {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+    & td:last-child {
+        border-right: 2px solid transparent !important;
+    }
+}
+
+
+
+
+
+// border on table row hover
+tbody tr:hover {
+
+    & th.overdue,
+    & td.overdue {
+        border: 2px solid #344857 !important;
+    }
+
+    & td.overdue:last-child {
+        border-right: 2px solid #344857 !important;
+    }
+
+    & th.overdue {
+        border-right: 0 !important;
+    }
+
+    & td.overdue {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+    & th.completed,
+    & td.completed {
+        border: 2px solid #3DB887 !important;
+    }
+
+    & td.completed:last-child {
+        border-right: 2px solid #3DB887 !important;
+    }
+
+    & th.completed {
+        border-right: 0 !important;
+    }
+
+    & td.completed {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+    & th.WIP,
+    & td.WIP {
+        border: 2px solid #7356a5 !important;
+    }
+
+    & td.WIP:last-child {
+        border-right: 2px solid #7356a5 !important;
+    }
+
+    & th.WIP {
+        border-right: 0 !important;
+    }
+
+    & td.WIP {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+
+    & th.New,
+    & td.New {
+        border: 2px solid #3498db !important;
+    }
+
+    & td.New:last-child {
+        border-right: 2px solid #3498db !important;
+    }
+
+    & th.New {
+        border-right: 0 !important;
+    }
+
+    & td.New {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+
+    & th.pending,
+    & td.pending {
+        border: 2px solid #E54457 !important;
+    }
+
+    & td.pending:last-child {
+        border-right: 2px solid #E54457 !important;
+    }
+
+    & th.pending {
+        border-right: 0 !important;
+    }
+
+    & td.pending {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+    & th.active,
+    & td.active {
+        border: 2px solid #3db887 !important;
+    }
+
+    & td.active:last-child {
+        border-right: 2px solid #3db887 !important;
+    }
+
+    & th.active {
+        border-right: 0 !important;
+    }
+
+    & td.active {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+    & th.inactive,
+    & td.inactive {
+        border: 2px solid #e54457 !important;
+    }
+
+    & td.inactive:last-child {
+        border-right: 2px solid #e54457 !important;
+    }
+
+    & th.inactive {
+        border-right: 0 !important;
+    }
+
+    & td.inactive {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+    & th.invited,
+    & td.invited {
+        border: 2px solid #3db887 !important;
+    }
+
+    & td.invited:last-child {
+        border-right: 2px solid #3db887 !important;
+    }
+
+    & th.invited {
+        border-right: 0 !important;
+    }
+
+    & td.invited {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+
+
+}
+
+tbody tr td {
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+
+.MuiTableContainer-root.table__Container table {
+    border-collapse: separate;
+    border-spacing: 0px 8px;
+}
+
+#table-data:hover {
+    border: 1px solid orangered;
+}
+
+.MuiButtonBase-root {
+    display: flex !important;
+}
+
+thead th .szh-menu-container {
+    & .MuiButtonBase-root {
+    justify-content: flex-start;
+}
+}
+
+#border-removing {
+    border: none;
+    border-radius: 100px;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    left: 20px;
+}
+
+
+// .TableHead, .TableBody {
+//     width: 100%;
+// }
+
+
+.TableBody tr td span {
+    max-width: 80% !important;
+    overflow: hidden !important;
+    // display: inline-block !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}

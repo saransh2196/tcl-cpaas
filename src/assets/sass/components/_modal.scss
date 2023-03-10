@@ -1,0 +1,135 @@
+[role="dialog"][aria-labelledby="responsive-dialog-title"] {
+    max-width: 80%;
+    flex-basis: 650px;
+    padding-left: 88px;
+    padding-right: 88px;
+    border-radius: 20px;
+
+    &>button {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 24px;
+        height: 24px;
+
+        & svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    & img {
+        width: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 12vh;
+        max-width: unset;
+        margin-bottom: 4vh;
+    }
+
+
+
+    & h2 {
+        padding: 0;
+        margin-bottom: 1.5vh;
+        font-size: 36px;
+        line-height: 0.9;
+        font-family: 'ubuntu';
+        font-weight: 700;
+    }
+
+    & .MuiDialogTitle-root+.MuiDialogContent-root {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-bottom: 4vh;
+        font-size: 20px;
+        font-family: 'ubuntu';
+        font-weight: 400;
+    }
+
+    & .MuiDialogActions-root {
+        padding: 0;
+        padding-bottom: 12vh;
+        justify-content: center;
+
+        & button {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            flex-basis: 480px;
+            transition: all 300ms 0ms ease-in;
+
+            border-radius: 35px;
+        }
+    }
+
+    // Specific for ticket raised modal
+    & .darker-text {
+        font-size: 20px;
+        font-family: 'ubuntu';
+        line-height: 1.5;
+        padding-bottom: 7vh;
+
+        & .ticket-number {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'ubuntu';
+        }
+
+        & .bolder-text {
+            font-weight: 700;
+        }
+
+    }
+
+    & .lighter-text {
+        font-size: 16px;
+    }
+
+}
+
+
+// No internal overflow
+
+.MuiDialog-container  .MuiDialogContentText-root {
+    overflow-y: unset;
+}
+
+// last line middle inside popup
+.modal-ticket-error {
+
+    & .lighter-text {
+        text-align: center;
+        padding-bottom: 12vh;
+
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: ubuntu;
+        opacity: 1;
+    }
+
+    [role=dialog][aria-labelledby=responsive-dialog-title] .MuiDialogActions-root {
+        padding-bottom: 0;
+    }
+}
+
+.modal-login-error {
+
+    & .lighter-text {
+        text-align: center;
+        padding-bottom: 12vh;
+
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: ubuntu;
+        opacity: 1;
+    }
+
+    [role=dialog][aria-labelledby=responsive-dialog-title] .MuiDialogActions-root {
+        padding-bottom: 0;
+    }
+}
+
+.MuiDialog-container {
+    backdrop-filter: blur(3px);
+}
